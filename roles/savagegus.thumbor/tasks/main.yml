@@ -25,6 +25,15 @@
     - libjasper-dev
     - libwebp-dev
 
+- name: install opencv deps
+  apt: pkg={{item}}
+  with_items:
+    - libcurl4-openssl-dev
+    - libopencv-dev
+    - libmagick++-dev
+    - graphicsmagick
+    - python-opencv
+
 - name: install pgmagick
   pip: >
     name={{item}}

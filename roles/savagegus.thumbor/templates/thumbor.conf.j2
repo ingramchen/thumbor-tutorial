@@ -336,8 +336,10 @@ ALLOW_UNSAFE_URL = False
 ## of them must be full names of python modules (python must be able to import
 ## it)
 ## Defaults to: []
-#DETECTORS = #    [
-#    ]
+DETECTORS = [
+      'thumbor.detectors.face_detector',
+      'thumbor.detectors.feature_detector'
+    ]
 
 
 ## The cascade file that opencv will use to detect faces
