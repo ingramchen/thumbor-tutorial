@@ -4,7 +4,7 @@ Vagrant.configure(2) do |config|
   end
   config.vm.box = "ubuntu-14.04"
   config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
-  config.vm.define "th" do |v|
+  config.vm.define "thumbor" do |v|
     v.vm.network "private_network", ip: "192.168.33.99"
   end
 end

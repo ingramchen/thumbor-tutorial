@@ -1,1 +1,4 @@
-.swp
+.vagrant/
+.idea/
+.DS_Store
+.*.swp
