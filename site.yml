@@ -1,0 +1,6 @@
+- hosts: thumbor 
+  roles:
+    - role: savagegus.thumbor
+      sudo: True
+      thumbor_results_storage: thumbor.result_storages.file_storage
+      thumbor_bind_address: '0.0.0.0'

@@ -1,0 +1,6 @@
+thumbor ansible_ssh_host=192.168.33.99
+
+## 指定所以設定的主機都使用 vagrant 這 user、及其 private ssh key
+[all:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_private_key_file='.vagrant/machines/thumbor/virtualbox/private_key'
