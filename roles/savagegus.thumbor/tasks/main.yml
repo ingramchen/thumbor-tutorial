@@ -46,6 +46,12 @@
 #    - dateutil
     - git+https://github.com/willtrking/thumbor_aws.git@{{ thumbor_aws_version }}#egg=thumbor_aws
 
+- name: install pngquant for thumbor plugin png optimizer
+  apt: pkg=pngquant
+
+- name: install thumbor-plugins
+  pip: name='https://github.com/thumbor/thumbor-plugins/archive/2208471e56aef603c6c13b7f6d9c65c9042483ef.zip'
+
 - name: copy nginx config
   template: >
     src=nginx-site.conf.j2
